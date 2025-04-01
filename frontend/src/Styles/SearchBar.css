@@ -1,0 +1,50 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Unique Search Bar Styles */
+.unique-search-container {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.unique-input-search {
+  height: 30px;
+  width: 200px;
+  /* Keep the width always at 300px */
+  border-style: none;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  outline: none;
+  /* Removes the default outline */
+  border-radius: 10px;
+  background-color: #22a7b374;
+  padding-right: 40px;
+  color: #fff;
+}
+
+.unique-input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.unique-btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  /* Removes the default outline */
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}

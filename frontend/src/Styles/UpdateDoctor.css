@@ -1,0 +1,81 @@
+/* General styles for the form container */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #f9f9f9b3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+
+
+  }
+  
+  /* Style for the form labels */
+  .doctor-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    margin-left: 12px;
+    font-weight: bold;
+  }
+  
+  /* Style for the form inputs */
+  .doctor-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    margin-left: 12px;
+    background-color: #ffffff6e;
+  }
+  
+  .doctor-form input:focus {
+    border-color: #1a33c0;
+    outline: none;
+  }
+  
+  /* Style for the submit button */
+  .submit-button {
+    background-color: #282dc6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 15px;
+  }
+  
+  .submit-button:hover {
+    background-color: #29b1d3;
+  }
+  
+  /* Additional styling for responsive design */
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 15px;
+    }
+  
+    .doctor-form input {
+      padding: 8px;
+    }
+  
+    .submit-button {
+      padding: 12px;
+    }
+  }
+  

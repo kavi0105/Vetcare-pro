@@ -1,0 +1,159 @@
+/* Basic styling for the home page */
+
+.home-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f400;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  max-height: 87vh; /* Set max height to make the content area limit the height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+.home-container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.home-container {
+  scrollbar-width: none; /* Hides the scrollbar */
+}
+
+.home-header {
+  background-color: #333333ae;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.home-header:hover {
+  transform: scale(1.05);
+}
+
+.home-header h1 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.home-header p {
+  font-size: 18px;
+  color: #b9b3b3;
+}
+
+.home-content {
+  margin-bottom: 40px;
+}
+
+.service-section,
+.appointment-section,
+.contact-section {
+  background-color: #ffffff75;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-section h2,
+.appointment-section h2,
+.contact-section h2 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.appointment-section:hover,
+.service-section:hover,
+.contact-section:hover {
+  transform: scale(1.05);
+}
+
+.service-section ul {
+  list-style-type: none;
+  padding: 0;
+  color: #4a4747;
+  font-weight: 400;
+}
+
+.service-section ul li {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.appointment-button {
+  background-color: #00000099;
+  color: #ffffff;
+}
+
+.contact-button {
+  background-color: #00000099;
+  color: white;
+}
+
+.home-footer {
+  background-color: #3333338c;
+  color: white;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.highlight-text {
+  color: #c7ab2c; /* Green color */
+  font-weight: bold;
+}
+
+.service-section {
+  background-color: #333333ae;
+  padding: 20px;
+  margin: 10px 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Flexbox layout for horizontal boxes */
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between service boxes */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 0;
+  margin: 10;
+}
+
+/* Individual service box */
+.service-list li {
+  list-style: none;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  min-width: 180px; /* Set a minimum width */
+  text-align: center;
+}
+
+/* Hover effect */
+.service-list li:hover {
+  transform: scale(1.05);
+  background-color: #388e3c; /* Darker green on hover */
+}

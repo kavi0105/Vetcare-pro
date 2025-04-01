@@ -1,0 +1,45 @@
+/* App.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .app-background {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../src/images/wall.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); /* Adjust the blur strength as needed */
+    z-index: -1; /* Make sure it stays in the background */
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .side-bar-wrapper {
+    flex-shrink: 0;
+    
+  }
+  
+  .content-wrapper {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust according to your sidebar width */
+    width: 300px;
+  }
+  
